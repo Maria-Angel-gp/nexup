@@ -11,7 +11,7 @@
     <div class="caja">
         <h2>Login</h2>
         
-        <form id="form-login">
+        <form id="form-login" onsubmit="return validarLogin()">
             <div class="campo">
                 <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario">
@@ -26,5 +26,6 @@
         </form>
     </div>
 
+    <script src="../js/login.js"></script>
 </body>
 </html>
