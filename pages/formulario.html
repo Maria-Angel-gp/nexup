@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto - NEXUP</title>
+</head>
+<link rel="stylesheet" href="../styles/styles_formulario.css">
+<body>
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+        <tr>
+           <td style="vertical-align: middle; text-align: left; width: 90px;">
+    <a href="--------" title="Volver a la página principal" class="logo-circle-container">
+        <img src="../img/Logotipo futurista NEXUP en neón.png" alt="Logotipo NEXUP">
+    </a>
+             </td>
+
+            <td style="vertical-align: middle; text-align: left;">
+                <span>Bienvenido a <strong>NEXUP</strong> - Tecnología, Cultura y Educación</span>
+            </td>
+
+            <td style="vertical-align: middle; text-align: right; width: 80px; position: relative;">
+                <details style="display: inline-block; position: relative;">
+    <summary style="cursor: pointer; list-style: none; font-size: 24px; padding: 5px 10px;" title="Menú">☰</summary>
+    <div class="dropdown-menu">
+        <a href="---------" class="btn-logout">Cerrar sesión</a>
+    </div>
+</details>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Formulario de Contacto</h2>
+
+    <form action="#" method="post">
+        <table style="border-collapse: separate; border-spacing: 10px;">
+            
+            <tr>
+                <td><label for="nombre">Nombre *</label></td>
+                <td>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="Solo letras y espacios" placeholder="Tu nombre">
+                </td>
+                
+                <td><label for="correo">Correo *</label></td>
+                <td>
+                    <input type="email" id="correo" name="correo" required maxlength="80" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Correo válido" placeholder="correo@ejemplo.com">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="telefono">Teléfono *</label></td>
+                <td>
+                    <input type="tel" id="telefono" name="telefono" required minlength="10" maxlength="10" pattern="[0-9]{10}" title="10 dígitos exactos" placeholder="3001234567">
+                </td>
+
+                <td><label for="edad">Edad *</label></td>
+                <td>
+                    <input type="number" id="edad" name="edad" required min="18" max="100" title="Entre 18 y 100 años" placeholder="Ej. 25">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="tipo_consulta">Consulta *</label></td>
+                <td>
+                    <select id="tipo_consulta" name="tipo_consulta" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="reclamo">Reclamo</option>
+                    </select>
+                </td>
+
+                <td><label for="fecha_contacto">Fecha *</label></td>
+                <td>
+                    <input type="date" id="fecha_contacto" name="fecha_contacto" required min="2026-10-23">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="sitioweb">Sitio Web</label></td>
+                <td>
+                    <input type="url" id="sitioweb" name="sitioweb" placeholder="https://tuweb.com">
+                </td>
+
+                <td><label>Urgencia *</label></td>
+                <td>
+                    <input type="radio" id="baja" name="urgencia" value="baja" required> <label for="baja">Baja</label>
+                    <input type="radio" id="alta" name="urgencia" value="alta"> <label for="alta">Alta</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="asunto">Asunto *</label></td>
+                <td colspan="3">
+                    <input type="text" id="asunto" name="asunto" required minlength="5" maxlength="60" style="width: 100%; box-sizing: border-box;" placeholder="Motivo del mensaje">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="mensaje">Mensaje *</label></td>
+                <td colspan="3">
+                    <textarea id="mensaje" name="mensaje" rows="4" required minlength="20" maxlength="500" style="width: 100%; box-sizing: border-box;" placeholder="Escribe tu mensaje..."></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="archivo">PDF *</label></td>
+                <td>
+                    <input type="file" id="archivo" name="archivo" accept=".pdf" required>
+                </td>
+                <td colspan="2">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones *</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" style="text-align: center; padding-top: 20px;">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+    <footer style="margin-top: 40px; text-align: center; width: 100%; padding: 20px 0; border-top: 1px solid #eeeeee;">
+        Contacto Nexup: <a href="mailto:juandavidmargarita@gmail.com">juandavidmargarita@gmail.com</a> | 2026
+    </footer>
+
+</body>
+</html>
