@@ -1,4 +1,25 @@
+.zona-desplazamiento {
+    display: inline-flex;
+    gap: 40px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;     /* Centra los elementos verticalmente */
+    width: 100%;             /* Ocupa todo el ancho disponible para permitir el centrado */
+}
 
+.zona-desplazamiento a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #49DEC8;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.zona-desplazamiento a:hover {
+    color: #1970FF;
+    text-shadow: 0 0 8px rgba(25, 112, 255, 0.6);
+}
 .logo-circle-container {
     width: 110px;
     height: 55px;
