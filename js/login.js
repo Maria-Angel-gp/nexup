@@ -13,7 +13,6 @@ function validarLogin(){
         sessionStorage.setItem('auth', '1');
         // alert("¡Bienvenido!")
         window.location.href = "../pages/eventos.html";
-        //window.location.href = "../eventos.html"
         return false;
     } else {
         alert("Usuario o contraseña incorrectos.");
