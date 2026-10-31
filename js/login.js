@@ -10,7 +10,9 @@ function validarLogin(){
 
     //Validar si son correctos
     if (usuario === "admin" && password === "1234") {
-        alert("¡Bienvenido!")
+        sessionStorage.setItem('auth', '1');
+        // alert("¡Bienvenido!")
+        window.location.href = "../pages/eventos.html";
         //window.location.href = "../eventos.html"
         return false;
     } else {
