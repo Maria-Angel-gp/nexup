@@ -1,5 +1,6 @@
 body{
     font-family: 'lexend', system-ui, sans-serif;
+    background-color: black;
 }
 
 
@@ -281,4 +282,55 @@ body{
 
 .modal_close2:hover{
     background-color: black;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0; /* Sin padding inicial para que encaje exacto al círculo */
+    background-color: white;
+    color: #222;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-width: 55px; /* Ancho idéntico al tamaño del ícono */
+    overflow: hidden; /* Oculta el texto desbordado */
+    white-space: nowrap; /* Evita que el texto salte de línea */
+    transition: max-width 0.4s ease, padding 0.4s ease, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Apariencia del círculo verde */
+.icono-whatsapp {
+    width: 55px;
+    height: 55px;
+    min-width: 55px; /* Evita que el ícono se encoja durante la animación */
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+/* Efecto hover: expande la píldora hacia la izquierda */
+.btn-whatsapp:hover {
+    max-width: 320px; /* Tamaño suficiente para revelar el texto completo */
+    padding: 10px 20px 10px 10px;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.20);
+    color: #222;
+}
+
+/* Ajuste responsive para celulares */
+@media (max-width: 576px) {
+    .btn-whatsapp {
+        bottom: 15px;
+        right: 15px;
+    }
 }
