@@ -19,3 +19,8 @@ function validarLogin(){
         return false;
     }
 }
+
+function cerrarSesion(){
+    sessionStorage.removeItem('auth');
+    window.location.href = '../index.html'
+}
