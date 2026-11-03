@@ -1,9 +1,12 @@
 .zona-desplazamiento {
     display: inline-flex;
     gap: 40px;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center;     /* Centra los elementos verticalmente */
-    width: 100%;             /* Ocupa todo el ancho disponible para permitir el centrado */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible para permitir el centrado */
 }
 
 .zona-desplazamiento a {
@@ -20,6 +23,7 @@
     color: #1970FF;
     text-shadow: 0 0 8px rgba(25, 112, 255, 0.6);
 }
+
 .logo-circle-container {
     width: 110px;
     height: 55px;
@@ -42,48 +46,52 @@
     object-fit: contain;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-form{
+form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-   body {
-        background-color:black;
-        color: #ffffff;
-        font-family: sans-serif;
-        margin: 0;
-        padding: 20px;
-    }
 
-    table {
-        color: #ffffff;
-    }
+body {
+    background-color: black;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
-    input[type="date"],
-    input[type="url"],
-    select,
-    textarea {
-        background-color: #121826;
-        color: #ffffff;
-        border: 1px solid #1970FF;
-        padding: 8px;
-        border-radius: 4px;
-    }
+table {
+    color: #ffffff;
+}
 
-    input:focus, select:focus, textarea:focus {
-        outline: none;
-        border-color: #1970FF;
-        box-shadow: 0 0 8px rgba(25, 112, 255, 0.6);
-    }
-     .dropdown-menu {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+select,
+textarea {
+    background-color: #121826;
+    color: #ffffff;
+    border: 1px solid #1970FF;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1970FF;
+    box-shadow: 0 0 8px rgba(25, 112, 255, 0.6);
+}
+
+.dropdown-menu {
     position: absolute;
     right: 0;
     top: 100%;
@@ -91,7 +99,7 @@ form{
     border: 1px solid #8E37FF;
     padding: 10px;
     border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     z-index: 100;
 }
 
@@ -115,51 +123,51 @@ form{
     box-shadow: 0 0 10px rgba(73, 222, 200, 0.6);
 }
 
-    button[type="submit"] {
-        background: linear-gradient(135deg, #1970FF, #8E37FF);
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-    }
+button[type="submit"] {
+    background: linear-gradient(135deg, #1970FF, #8E37FF);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
-    button[type="reset"] {
-        background-color: #121826;
-        color: #49DEC8;
-        border: 1px solid #49DEC8;
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-    }
+button[type="reset"] {
+    background-color: #121826;
+    color: #49DEC8;
+    border: 1px solid #49DEC8;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
-    button[type="submit"]:hover {
-        opacity: 0.9;
-    }
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
 
-    button[type="reset"]:hover {
-        background-color: #49DEC8;
-        color: #0b0f19;
-    }
+button[type="reset"]:hover {
+    background-color: #49DEC8;
+    color: #0b0f19;
+}
 
-    a {
-        color: #49DEC8;
-        text-decoration: none;
-    }
+a {
+    color: #49DEC8;
+    text-decoration: none;
+}
 
-    a:hover {
-        text-decoration: underline;
-    }
+a:hover {
+    text-decoration: underline;
+}
 
-    hr {
-        border: 0;
-        height: 1px;
-        background: linear-gradient(90deg, #1970FF, #8E37FF, #49DEC8);
-    }
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #1970FF, #8E37FF, #49DEC8);
+}
 
-    details div {
+details div {
     background-color: #121826;
     border: 1px solid #8E37FF;
     border-radius: 4px;
